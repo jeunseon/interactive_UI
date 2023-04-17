@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <h1>DCODELAB</h1>
+    <main>
+        <section class="swiper-wrapper">
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic1.png" alt="pic1">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, unde?</p>
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic2.png" alt="pic2">
+                        <h2>Consequatur quo similique dolore.</h2>
+                        <p>Assumenda doloremque doloribus in saepe accusantium dolorem obcaecati placeat nemo.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic3.png" alt="pic3">
+                        <h2>Earum quaerat perspiciatis numquam?</h2>
+                        <p>Ratione quisquam, optio fugiat exercitationem quibusdam nulla eveniet ipsam pariatur.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic4.png" alt="pic4">
+                        <h2>Adipisci quia molestias impedit.</h2>
+                        <p>Deleniti rem sint mollitia dignissimos odit, cum quisquam illum molestias.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic5.png" alt="pic5">
+                        <h2>Eius reiciendis fuga illum!</h2>
+                        <p>Maiores natus harum praesentium itaque hic consequuntur quidem quae accusantium!</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <nav class="swiper-pagination"></nav>
+        <nav class="swiper-button-prev navi"></nav>
+        <nav class="swiper-button-next navi"></nav>
+    </main>
+    <footer>
+        2022 DCODELAB &copy; ALL RIGHT RESERVED.
+    </footer>
+
+    <script>
+        //기본 스와이퍼 연결볍
+        const swiper = new Swiper("main",{
+            speed: 500, //스와이프시 패널이 넘어가는 속도
+            loop: true, //스와이프를 순환
+            direction: "horizontal", //horizontal 가로, vertical 세로 스와이프
+            grabCursor: true,
+            loopedSlides: 2,
+            slidesPerView: "auto", //숫자 (해당갯수단위로 패널보임), "auto": 100%, 특정 크기를 지정
+            spaceBetween: 30, //패널사이 간격 (px)
+            centeredSlides: true, //활성화 패널을 항상 가로 가운대 배치
+            pagination: {
+                el: ".swiper-pagination", //페이지네이션 버튼 추가
+                // clickable: true //클릭가능여부 설정
+                type: "fraction"
+            },
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            effect: "coverflow",
+            coverflowEffect: {
+                rotate: 50, //y축 회전각도
+                stretch: -100, //당겨짐 정도
+                depth: 400, //입체적인 왜곡효과 정도
+                slideShadows: false //패널의 그림자 설정
+            }
+        });
+     </script>
+</body>
+</html>
