@@ -8,7 +8,7 @@ articles.forEach( article => {
     const imgAlt = article.querySelector("article img").getAttribute('alt');
 
     article.addEventListener("mouseenter", e => {
-        e.currentTarget.querySelector("img").setAttribute('src', imgSrc);
+        e.currentTarget.querySelector("img").setAttribute('src', imgSrc +".gif");
         e.currentTarget.querySelector("img").setAttribute('alt', imgAlt);
     });
     article.addEventListener("mouseleave", e => {
@@ -22,7 +22,7 @@ articles.forEach( article => {
         
         aside.querySelector("h2").innerHTML = tit;
         aside.querySelector("p").innerText = con;
-        aside.querySelector("img").setAttribute('src', imgSrc);
+        aside.querySelector("img").setAttribute('src', imgSrc +".gif");
         aside.querySelector("img").setAttribute('alt', imgAlt);
         aside.classList.add('on');
     });
