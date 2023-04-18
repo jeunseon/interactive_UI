@@ -18,10 +18,10 @@ articles.forEach( article => {
 
     article.addEventListener("click", e => {
         const tit = e.currentTarget.querySelector("h2").innerHTML;
-        const con = e.currentTarget.querySelector("p").innerText;
+        const con = e.currentTarget.querySelector(".des").innerHTML;
         
         aside.querySelector("h2").innerHTML = tit;
-        aside.querySelector("p").innerText = con;
+        aside.querySelector(".des").innerHTML = con;
         aside.querySelector("img").setAttribute('src', imgSrc +".gif");
         aside.querySelector("img").setAttribute('alt', imgAlt);
         aside.classList.add('on');

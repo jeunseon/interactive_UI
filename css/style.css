@@ -117,9 +117,44 @@ main section article .inner .txt h2 span {
   margin-left: 20px;
   text-transform: uppercase;
 }
-main section article .inner .txt p {
+main section article .inner .txt .des {
   color: #888;
   font: normal 14px/1 "arial";
+}
+main section article .inner .txt .des ul {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section article .inner .txt .des ul li {
+  margin-right: 10px;
+  font: normal 15px/1.5 "arial";
+}
+main section article .inner .txt .des p {
+  font: 15px/2 "arial";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+main section article .inner .txt .des p span {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+}
+main section article .inner .txt .des p span:nth-of-type(2) {
+  padding-left: 20px;
+}
+main section article .inner .txt .des p span:nth-of-type(2)::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #888;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
+main section article .inner .txt .des a {
+  display: none;
 }
 main section article .inner figure {
   width: 100%;
@@ -153,9 +188,6 @@ main section article:hover .inner .txt h2 {
 main section article:hover .inner .txt h2::after {
   background: orange;
   width: 100px;
-}
-main section article:hover .inner .txt p {
-  width: 75%;
 }
 main section article:hover .inner figure {
   filter: saturate(1);
@@ -195,7 +227,54 @@ main aside .txtBox h2 span {
   padding-left: 20px;
   letter-spacing: 1px;
 }
-main aside .txtBox p {
+main aside .txtBox .des {
+  color: #888;
+  font: normal 14px/1 "arial";
+}
+main aside .txtBox .des ul {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main aside .txtBox .des ul li {
+  margin-right: 10px;
+  font: normal 16px/1.8 "arial";
+}
+main aside .txtBox .des p {
+  font: 15px/2 "arial";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+main aside .txtBox .des p span {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+}
+main aside .txtBox .des p span:nth-of-type(2) {
+  padding-left: 20px;
+}
+main aside .txtBox .des p span:nth-of-type(2)::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #888;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
+main aside .txtBox .des a {
+  font: normal 16px/1 "arial";
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 18px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+main aside .txtBox .des a:hover {
+  background: #fff;
   color: #888;
 }
 main aside .imgBox {
@@ -208,4 +287,5 @@ main aside .closeBtn {
   position: absolute;
   top: 100px;
   right: 5vw;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
