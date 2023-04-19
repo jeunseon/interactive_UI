@@ -40,6 +40,15 @@ main{
             background-image: url(../img/phone_night.png);
         }
     }
+    &.dark_text{
+        header h1, 
+        header #sns li i, 
+        article p, 
+        article em, 
+        figure .screen{
+            color: #555;
+        }
+    }
 
 
     .sky_cl1{
