@@ -29,10 +29,10 @@ main.morning {
 main.morning figure {
   background-image: url(../img/phone_morning.png);
 }
-main.afternoom {
+main.afternoon {
   background-image: url(../img/bg_afternoon.jpg);
 }
-main.afternoom figure {
+main.afternoon figure {
   background-image: url(../img/phone_afternoon.png);
 }
 main.evening {
